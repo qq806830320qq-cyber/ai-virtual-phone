@@ -44,3 +44,9 @@
   --font-size-lg: 17px;  --font-size-xl: 20px;
   --font-size-2xl: 24px; --font-size-3xl: 30px;
 }
+
+/* 设备兼容：屏幕装不下 390×844 的手机壳时，自动缩到屏幕内 */
+:root {
+  --phone-screen-width: min(390px, calc(100vw - 28px));
+  --phone-screen-height: min(844px, calc(100dvh - 40px));
+}
